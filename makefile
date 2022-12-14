@@ -22,7 +22,7 @@ test: test-ligo test-integration
 
 test-ligo: 
 		@echo "Testing Ligo..."
-		@$(call testing,main.mligo)
+		@$(call testing,increment.test.mligo)
 		@echo "Testing Ligo... Successful"
 
 test-integration:
