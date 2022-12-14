@@ -11,6 +11,7 @@ let tx_failure (res : test_exec_result) (expected : string) : unit =
 
 
 let tx_success (res : test_exec_result) (expected : string) =
+  let expected = Test.eval expected in
   match res with
-      Success (actual, _) -> assert (actual = expected)
-    | Fail (res) -> tx_failure res expected
+      Success _ -> ()
+    | Fail (_) -> failwith "contract failed"
