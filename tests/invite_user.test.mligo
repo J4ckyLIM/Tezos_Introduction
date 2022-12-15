@@ -19,4 +19,4 @@ let test_successful_invite_user =
   let modified_storage = Helper.get_storage(taddr) in
   let () = Test.println(Test.to_string(modified_storage)) in
   let new_storage = { Bootstrap.base_storage with user_map = Map.add(accounts.2, true, Bootstrap.base_storage.admins)} in
-  assert(Helper.get_storage(taddr) = Bootstrap.base_storage + 3)
+  assert(Helper.get_storage(taddr) = new_storage) // Need to fix the test
