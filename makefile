@@ -23,7 +23,7 @@ test: test-ligo test-integration
 
 test-ligo: 
 		@echo "Testing Ligo..."
-		@$(call testing,increment.test.mligo)
+		@$(call testing,invite_user.test.mligo)
 		@echo "Testing Ligo... Successful"
 
 deploy:
