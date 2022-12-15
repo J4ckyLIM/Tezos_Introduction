@@ -17,7 +17,7 @@ let default_user_map : Storage.user_mapping =
         (Tezos.get_sender(), admin_user);
     ]
 
-let base_storage = {
+let base_storage : Storage.storage = {
     user_map = default_user_map;
     message_map = Map.empty;
 }

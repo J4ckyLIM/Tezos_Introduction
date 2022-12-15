@@ -14,5 +14,5 @@ let call (p, contr : Main.parameter * contr) =
 let call_invite_admin (p, contr : address * contr) =
   call(InviteAdmin(p), contr)
 
-let call_invite_success (p, contr : address * contr) =
+let call_invite_admin_success (p, contr : address * contr) =
   Assert.tx_success(call_invite_admin(p, contr))
