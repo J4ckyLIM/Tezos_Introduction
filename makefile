@@ -1,5 +1,5 @@
 ifndef LIGO
-	LIGO = docker run --rm -v "${PWD}":"${PWD}" -w "${PWD}" ligolang/ligo:0.57.0
+	LIGO = docker run --rm -v "${PWD}":"${PWD}" -w "${PWD}" ligolang/ligo:0.60.0
 endif
 
 default: help
