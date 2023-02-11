@@ -1,0 +1,8 @@
+let not_admin = "You are not an admin"
+let need_to_pay = "You have to pay 1tez to be able to write a messgae"
+let no_entry = "Sorry, this user no exists"
+let user_already_invited = "This user is already invited"
+let user_already_admin = "This user is already admin"
+let user_not_admin = "This user is not admin"
+let user_not_invited = "This user is not invited"
+let not_whitelisted = "You are not whitelisted"
